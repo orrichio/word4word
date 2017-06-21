@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" href="css/jquery.mobile.custom.structure.css">
+    <link rel="stylesheet" href="css/jquery.mobile.custom.theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile.custom.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="prefetch" href="assets/Tinos-Bold.ttf">
+    <link rel="prerender" href="index.html">
+
+</head>
+<body>
+
+<div data-role="page" id="page-home">
+    <div class="container-fluid">
+        <div class="col-md-6 col-md-offset-3 text-center text-title">
+            Word 4 Word
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <a href="#page-play">
+                <button type="button" class="button-home btn btn-primary btn-lg btn-block">Play</button>
+            </a>
+            <br>
+            <a href="#page-dictionary">
+                <button type="button" class="button-home btn btn-primary btn-lg btn-block">Dictionary</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="page-play" >
+    <div class="container-fluid">
+        <nav>
+            <button class="button-back btn btn-default">Back</button>
+        </nav>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Continue Game</button></a>
+        <br>
+        <br>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Beginner</button></a>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Novice</button></a>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Apprentice</button></a>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Professional</button></a>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Expert</button></a>
+        <br>
+        <a href="#page-game"><button type="button" class="button-play btn btn-primary btn-lg btn-block">Master</button></a>
+    </div>
+</div>
+
+<div data-role="page" id="page-dictionary" >
+    <div class="container-fluid">
+        <nav>
+            <button class="button-back btn btn-default">Back</button>
+        </nav>
+        <ul class="list-group" id="dictionary-result">
+        </ul>
+    </div>
+</div>
+
+<div data-role="page" id="page-game" >
+    <div class="container-fluid">
+        <nav>
+            <button class="button-back btn btn-default">Back</button>
+        </nav>
+        <div class="page-header">
+            <div class="text-center">
+                <div id="game-difficulty"></div>
+                <div id="refresh-game"><i class="glyphicon glyphicon-refresh"></i></div>
+            </div>
+            <span id="game-win"></span>
+        </div>
+        <div class="panel panel-default text-center">
+            <div class="panel-heading">
+                <div id="game-start-word"></div>
+            </div>
+            <div class="panel-body">
+                <div id="guess"></div>
+            </div>
+            <div class="panel-heading">
+                <div id="game-end-word"></div>
+            </div>
+            <div class="panel-heading">
+                <input id="game-input" placeholder="guess">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

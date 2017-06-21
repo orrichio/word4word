@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<title>Word 4 Word</title>
+	<link rel='stylesheet' href='css/jquery.mobile.custom.theme.css'>
+	<link rel='stylesheet' href='css/jquery.mobile.custom.structure.css'>
+	<link rel='stylesheet' href='css/bootstrap.min.css'>`
+	<link rel='stylesheet' href='css/bootstrap-theme.min.css'>
+
+	<link rel='stylesheet' href='css/style.css'>
+
+	<script src='js/jquery-2.1.4.min.js'></script>
+	<script src='js/jquery.mobile.custom.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+
+	<script src='js/main.js'></script>
+	<script src='js/word.js'></script>
+	<script src='js/dictionary.js'></script>
+	<script src='js/utility.js'></script>
+	<script src='js/game.js'></script>
+</head>
+<body>
+
+<div data-role='page' id='page-home'>
+	<div class='container-fluid'>
+		<div class='col-md-6 col-md-offset-3 text-center text-title'>
+			Word 4 Word
+		</div>
+		<div class='col-md-6 col-md-offset-3'>
+			<a href='#page-play'>
+				<button type='button' class='button-home btn btn-primary btn-lg btn-block'>Play</button>
+			</a>
+			<br>
+			<a href='#page-dictionary'>
+				<button type='button' class='button-home btn btn-primary btn-lg btn-block'>Dictionary</button>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<div data-role='page' id='page-play' >
+	<div class='container-fluid'>
+		<a href='#back'>
+			<button class='button-back btn btn-default'>Back  <img src='assets/android-arrow-back.svg' class='icon-medium'/></button>
+		</a>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Continue Game</button>
+		</a>
+		<br>
+		<br>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Beginner</button>
+		</a>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Novice</button>
+		</a>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Apprentice</button>
+		</a>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Professional</button>
+		</a>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Expert</button>
+		</a>
+		<br>
+		<a href='#page-game'>
+			<button type='button' class='button-play btn btn-primary btn-lg btn-block'>Master</button>
+		</a>
+	</div>
+</div>
+
+<div data-role='page' id='page-dictionary' >
+	<div class='container-fluid'>
+		<a href='#back'>
+			<button class='button-back btn btn-default'>Back  <img src='assets/android-arrow-back.svg' class='icon-medium'/></button>
+		</a>
+		<ul class='list-group' id='list-dictionary'>
+		</ul>
+	</div>
+</div>
+
+<div data-role='page' id='page-game' >
+	<div class='container-fluid'>
+		<a href='#back'>
+			<button class='button-back btn btn-default'>Back  <img src='assets/android-arrow-back.svg' class='icon-medium'/></button>
+		</a>
+
+		<div class='text-center'>
+			<button class='button-game btn btn-default' id='button-restart'>Restart <img src='assets/refresh.svg' class='icon-medium'/></button>
+			<button class='button-game btn btn-default' id='button-skip'>Skip <img src='assets/forward.svg' class='icon-medium'/></button>
+			<button class='button-game btn btn-default' id='button-hint'>Hint <img src='assets/help.svg' class='icon-medium'/></button>
+		</div>
+		<div class='panel panel-default text-center'>
+			<div class='panel-heading'>
+				<div id='text-game-start-word'></div>
+			</div>
+			<div class='panel-body'>
+				<div id='text-before-guess'></div>
+			</div>
+			<div class='panel-heading'>
+				<input id='input-word-guess' placeholder='word'>
+			</div>
+			<div class='panel-body'>
+				<div id='text-after-guess'></div>
+			</div>
+			<div class='panel-heading'>
+				<div id='text-game-end-word'></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

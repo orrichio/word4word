@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Hind-Regular';
+    src: url("../assets/Hind-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Hind-Bold';
+    src: url("../assets/Hind-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Tinos-Regular';
+    src: url("../assets/Tinos-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Tinos-Bold';
+    src: local(Tinos Bold), url("../assets/Tinos-Regular.ttf") format('truetype');
+}
+* {
+    font-family: Hind-Regular;
+}
+.text-title {
+    font-family: Tinos-Regular;
+    font-size: 40pt;
+    padding: 50px 0 50px 0;
+}
+.button-home {
+    font-size: 20pt !important;
+}
+.button-play {
+    font-size: 16pt !important;
+}
+.button-back {
+    font-size: 16pt !important;
+}
+.button-game {
+    font-size: 16pt !important;
+}
+.icon-large {
+    width: 36px;
+    height: 36px;
+}
+.icon-medium {
+    width: 26px;
+    height: 26px;
+}
+.icon-medium {
+    width: 16px;
+    height: 16px;
+}
